@@ -23,7 +23,7 @@ let
       # in rust projects
       rust-nightly = rust-bin.nightly.latest.minimal;
       rust = rust-bin.stable.latest.default;
-      platform-tools = solana-platform-tools.override { version = "1.45"; };
+      platform-tools = solana-platform-tools.override { version = "1.50"; };
       patches = [ ./patches/anchor-cli/0.31.1.patch ];
     };
     "0.31.0" = {
