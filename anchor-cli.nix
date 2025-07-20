@@ -21,8 +21,8 @@ let
       hash = "sha256-c+UybdZCFL40TNvxn0PHR1ch7VPhhJFDSIScetRpS3o=";
       # Unfortunately dependency on nightly compiler seems to be common
       # in rust projects
-      rust-nightly = rust-bin.nightly."2025-04-21".minimal;
-      rust = rust-bin.stable."1.85.0".default;
+      rust-nightly = rust-bin.nightly.latest.minimal;
+      rust = rust-bin.stable.latest.default;
       platform-tools = solana-platform-tools.override { version = "1.45"; };
       patches = [ ./patches/anchor-cli/0.31.1.patch ];
     };
